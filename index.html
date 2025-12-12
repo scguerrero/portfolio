@@ -1,0 +1,13 @@
+---
+title: S.C. Guerrero
+layout: default
+---
+
+<p>Hello, welcome to my portfolio/blog site! My name is S.C. Guerrero. I'm a Computer Engineering student 
+at North Central College in Naperville, IL.</p>
+
+<h2>Posts</h2>
+{% for post in site.posts %}
+		<!-- <time>{{ post.date | date: "%b %-d, %Y" }}</time>-->
+		<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+{% endfor %}
