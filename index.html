@@ -3,11 +3,12 @@ title: S.C. Guerrero
 layout: default
 ---
 
-<p>Hello, welcome to my portfolio/blog site! My name is S.C. Guerrero. I'm a Computer Engineering student 
-at North Central College in Naperville, IL.</p>
+<p>Hello, welcome to my portfolio/blog site! My name is Sasha (she/her). I'm a Computer Engineering student 
+at North Central College in Naperville, IL. This website is intended to be a hub for my credentials and 
+(extra)curricular projects. The color scheme is inspired by <a href="https://catppuccin.com/">Catppuccin</a>, 
+who I found via <a href="https://obsidian.md/">Obsidian</a>'s in-app themes. The favicon and cursor icons are by me.</p>
 
 <h2>Posts</h2>
 {% for post in site.posts %}
-		<!-- <time>{{ post.date | date: "%b %-d, %Y" }}</time>-->
 		<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
 {% endfor %}
